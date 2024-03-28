@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'midnightregular';
-    src: url('midnight-webfont.woff2') format('woff2'),
-         url('midnight-webfont.woff') format('woff');
+    src: url('../fonts/midnight-webfont.woff2') format('woff2'),
+         url('../fonts/midnight-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
