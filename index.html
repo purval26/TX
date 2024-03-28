@@ -21,7 +21,8 @@
 </head>
 
 <body>
-    <section id="header">
+    <div class="load"> <div class="loader"></div></div>
+    <div id="header">
         <a href="./"><img src="./img/logo.png" class="logo" alt="" /></a>
 
         <div>
@@ -40,13 +41,21 @@
             <a href="./Cart/"><i class="far fa-shopping-bag"></i></a>
             <i id="bar" class="far fa-outdent"></i>
         </div>
-    </section>
+    </div>
 
+    <video id="bgv" loop muted autoplay>
+        <source src="./video/light.mp4">
+    </video>
     <section id="hero">
         <h1>Team X Spark</h1>        
     </section>
     <h2 class="arc">Achievements</h2>
     <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="./img/LMS.png" alt="" />
+            <h6>Lidoma Masters Showdown</h6>
+            <h6 class="pos">#3</h6>
+        </div>
         <div class="fe-box">
             <img src="./img/IQOO.png" alt="" />
             <h6>iQOO Pro Series 2024</h6>
@@ -289,11 +298,14 @@
 <script>
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
+  var navh = document.getElementById("header").offsetHeight;
   if (currentScrollPos > 100) {
     document.getElementById("header").style.display = "flex";
     document.getElementById("header").style.position = "fixed";
+    document.getElementById("bgv").style.top = navh +"px" ;
   } else {
     document.getElementById("header").style.display = "none";
+    document.getElementById("bgv").style.top = "0px";
   }
 }
 
