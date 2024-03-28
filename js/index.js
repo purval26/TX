@@ -14,3 +14,7 @@ if (close) {
   });
 }
 ;;
+const loader  = document.querySelector(".load");
+window.addEventListener("load" , function(){
+    loader.style.display =  "none"
+})
