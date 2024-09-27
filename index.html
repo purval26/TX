@@ -17,13 +17,16 @@
 
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/stylesheet.css" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1998433425235931" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1998433425235931"crossorigin="anonymous"></script> -->
 </head>
 
 <body>
-    <div class="load"> <div class="loader"></div></div>
+    <div class="load">
+        <div class="loader"></div>
+    </div>
     <div id="header">
-        <a href="./"><img src="./img/logo.png" class="logo" alt="" /></a>
+        <a href="./"><img src="./img/logo.png" class="logo" alt="logo" /></a>
 
         <div>
             <ul id="navbar">
@@ -47,10 +50,30 @@
         <source src="./video/light.mp4">
     </video>
     <section id="hero">
-        <h1>Team X Spark</h1>        
+        <h1>Team X Spark</h1>
     </section>
     <h2 class="arc">Achievements</h2>
     <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="./img/BGIS24.png" alt="" />
+            <h6>Battlegrounds Mobile India Series 2024</h6>
+            <h6 class="pos">#1</h6>
+        </div>
+        <div class="fe-box">
+            <img src="./img/FCS1.png" alt="" />
+            <h6>Fearless Championship Series Season 1</h6>
+            <h6 class="pos">#3</h6>
+        </div>
+        <div class="fe-box">
+            <img src="./img/COW2.png" alt="" />
+            <h6>Clash of Warriors Season 2</h6>
+            <h6 class="pos">#3</h6>
+        </div>
+        <div class="fe-box">
+            <img src="./img/SMO.png" alt="" />
+            <h6>Skyesports Mobile Open 2024</h6>
+            <h6 class="pos">#3</h6>
+        </div>
         <div class="fe-box">
             <img src="./img/LMS.png" alt="" />
             <h6>Lidoma Masters Showdown</h6>
@@ -101,7 +124,7 @@
             <h6>Battlegrounds Mobile India Showdown 2022</h6>
             <h6 class="pos">#20</h6>
         </div>
-        
+
         <div class="fe-box">
             <img src="./img/TIS.png" alt="" />
             <h6>THUG Invitational: Season 4</h6>
@@ -127,7 +150,7 @@
             <h6>LOCO Diwali Battle: Grand Finals</h6>
             <h6 class="pos">#5</h6>
         </div>
-            <div class="fe-box">
+        <div class="fe-box">
             <img src="./img/PMCO.png" alt="" />
             <h6>PUBG Mobile Club Open - Fall Split 2020: India</h6>
             <h6 class="pos">#1</h6>
@@ -142,7 +165,7 @@
             <h6>PUBG Mobile Club Open - Fall Split: South Asia Group Stage</h6>
             <h6 class="pos">#3</h6>
         </div>
-        
+
     </section>
 
     <section id="product1" class="section-p1">
@@ -232,7 +255,7 @@
         </div>
     </section>
 
-    
+
 
 
 
@@ -284,7 +307,7 @@
             <a href="./Login/">My Wishlist</a>
             <a href="./Login/">Track My Order</a>
             <a href="./Contact/">Help</a>
-        </div>                
+        </div>
 
         <div class="copyright">
             <p>© 2024-Currunt Year, For Team X Spark</p>
@@ -295,21 +318,21 @@
 	<script src="js/main.js"></script> -->
     <script src="./js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  var navh = document.getElementById("header").offsetHeight;
-  if (currentScrollPos > 100) {
-    document.getElementById("header").style.display = "flex";
-    document.getElementById("header").style.position = "fixed";
-    document.getElementById("bgv").style.top = navh +"px" ;
-  } else {
-    document.getElementById("header").style.display = "none";
-    document.getElementById("bgv").style.top = "0px";
-  }
-}
+    <script>
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            var navh = document.getElementById("header").offsetHeight;
+            if (currentScrollPos > 100) {
+                document.getElementById("header").style.display = "flex";
+                document.getElementById("header").style.position = "fixed";
+                document.getElementById("bgv").style.top = navh + "px";
+            } else {
+                document.getElementById("header").style.display = "none";
+                document.getElementById("bgv").style.top = "0px";
+            }
+        }
 
-</script>
+    </script>
 </body>
 
 </html>
